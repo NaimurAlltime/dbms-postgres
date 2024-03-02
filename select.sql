@@ -43,3 +43,24 @@ VALUES
     SELECT email as "Student Email", age FROM students;
 
     SELECT * FROM students ORDER BY age ASC;
+
+    -- unique total country
+    SELECT DISTINCT country FROM students;
+
+   -- data filtering 
+   SELECT * FROM students 
+      WHERE country='USA';
+
+   SELECT * FROM students 
+      WHERE grade='A' AND course= 'Math';   
+
+    SELECT * FROM students 
+      WHERE (country='USA' OR country='UK') AND age=21;  
+
+    SELECT * FROM students 
+      WHERE age <> 21;    
+
+
+    SELECT * FROM students 
+      WHERE age >= 21;  
+
