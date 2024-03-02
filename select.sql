@@ -125,5 +125,9 @@ DELETE FROM students WHERE grade = 'C';
 DELETE FROM students WHERE grade = 'B' and country='USA';
 
 
+--update data
+UPDATE students set email = 'example@gmail.com', age=25 WHERE student_id = 5;
+
+SELECT * FROM students;
 
 
