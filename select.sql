@@ -60,7 +60,28 @@ VALUES
     SELECT * FROM students 
       WHERE age <> 21;    
 
-
     SELECT * FROM students 
       WHERE age >= 21;  
+
+    --sclar function  
+    SELECT concat(first_name, ' ', last_name) as fullName FROM students;
+
+    -- aggregate FUNCTION
+    SELECT AVG(age) FROM students;
+
+    SELECT MAX(age) FROM students;
+
+    SELECT SUM(age) FROM students;
+
+    SELECT MAX(length(first_name)) FROM students;
+
+    -- use null 
+    SELECT * FROM students
+       WHERE email IS NULL;
+
+    SELECT * FROM students
+       WHERE email IS NOT NULL;
+
+    -- null value set default VALUES
+    SELECT COALESCE(email, 'Email Can not provided') as "Email", * FROM students;   
 
