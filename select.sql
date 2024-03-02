@@ -85,3 +85,31 @@ VALUES
     -- null value set default VALUES
     SELECT COALESCE(email, 'Email Can not provided') as "Email", * FROM students;   
 
+ SELECT * FROM students 
+      WHERE country IN('USA', 'UK', 'Canada');
+
+  SELECT * FROM students 
+      WHERE country NOT IN('USA', 'UK', 'Canada');    
+
+
+ SELECT * FROM students 
+      WHERE age BETWEEN 20 and 25 ORDER BY age;
+
+SELECT * FROM students 
+      WHERE first_name LIKE '%am';
+
+SELECT * FROM students 
+      WHERE first_name LIKE 'M%';
+
+SELECT * FROM students 
+      WHERE first_name LIKE '___a%';
+
+SELECT * FROM students 
+      WHERE first_name LIKE '___a';
+
+SELECT * FROM students 
+      WHERE first_name ILIKE 'A%';                        
+
+
+
+
