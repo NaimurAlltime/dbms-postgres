@@ -108,7 +108,21 @@ SELECT * FROM students
       WHERE first_name LIKE '___a';
 
 SELECT * FROM students 
-      WHERE first_name ILIKE 'A%';                        
+      WHERE first_name ILIKE 'A%';         
+
+-- pagination limit and offset use 
+SELECT * FROM students LIMIT 5 OFFSET 5 * 0; 
+SELECT * FROM students LIMIT 5 OFFSET 5 * 1;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 2;
+SELECT * FROM students LIMIT 5 OFFSET 5 * 3;                    
+
+
+SELECT * FROM students WHERE grade = 'C';
+SELECT * FROM students WHERE country = 'USA';
+
+-- delete Data
+DELETE FROM students WHERE grade = 'C';
+DELETE FROM students WHERE grade = 'B' and country='USA';
 
 
 
