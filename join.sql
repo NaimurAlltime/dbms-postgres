@@ -61,3 +61,6 @@ SELECT * FROM post LEFT OUTER JOIN "user" ON post.user_id = "user".id;
 
 -- Right JOIN
 SELECT * FROM post RIGHT OUTER JOIN "user" ON post.user_id = "user".id; 
+
+--Full outer JOIN
+SELECT * FROM post as p FULL OUTER JOIN "user" as u ON p.user_id = u.id;
