@@ -49,3 +49,15 @@ INSERT INTO "user" (username) VALUES
 SELECT username, title FROM post JOIN "user" ON post.user_id = "user".id;
 
 SELECT * FROM post as p INNER JOIN "user" as u ON p.user_id = u.id;
+
+SELECT * FROM "user" JOIN post ON post.user_id = "user".id;
+
+INSERT INTO post (title, user_id) VALUES
+    ('Test title', NULL);
+
+
+-- Left JOIN
+SELECT * FROM post LEFT OUTER JOIN "user" ON post.user_id = "user".id; 
+
+-- Right JOIN
+SELECT * FROM post RIGHT OUTER JOIN "user" ON post.user_id = "user".id; 
