@@ -1,5 +1,4 @@
 -- Active: 1709375237234@@127.0.0.1@5432@test_db
--- Active: 1709375237234@@127.0.0.1@5432@test_db
 CREATE TABLE "user"(
     id SERIAL PRIMARY KEY,
     username VARCHAR(25) NOT NULL

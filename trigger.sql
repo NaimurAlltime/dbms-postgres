@@ -1,5 +1,4 @@
 -- Active: 1709375237234@@127.0.0.1@5432@test_db
--- Active: 1699467625194@@127.0.0.1@5432@ph@public
 
 /*
 A trigger is a database object in PostgreSQL (and other database management systems) that automatically executes a specified set of actions in response to certain database events or conditions. 
